@@ -1,12 +1,12 @@
 /* This part is general for all media and pages */ 
 
 * {
-	color: #CDD7D8 !important;
+	color: #EBEBEB !important;
 }
 
 .body, p, a, input {
-	/*font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif !important;*/
-	font-family: sans-serif !important;
+	font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	/*font-family: sans-serif !important;*/
 }
 
 
@@ -82,6 +82,7 @@ span.caret {
 
 .navbar-nav {
 	margin: 0px;
+	font-size:15px;
 }
 
 .navbar-right:last-child {
@@ -182,6 +183,7 @@ dl.additional-information dd {
 
 .search-bar {
 	width: 220px;
+	top: 3px;
 }
 
 .search-bar span {
@@ -303,6 +305,7 @@ hr {
 	border-top: 1px solid #cfd0d0;
 	border-bottom: 1px solid #cfd0d0;
 	font-weight: 700;
+	font-family: Source Sans Pro;
 }
 
 .bordered-heading form {
@@ -490,6 +493,7 @@ figcaption a, figcaption {
 		margin: 0px;
 		padding: 0px;
 		border: none;
+		font-family: Helvetica Neue;
 	}
 	.browse #filters .label {
 		text-align: left;
@@ -542,6 +546,7 @@ figcaption a, figcaption {
 		height: 100%;
 		float: left;
 		padding: 0px;
+		margin-bottom: 50px;
 	}
 	#home figure img {
 		min-width:76px;
@@ -623,6 +628,7 @@ figcaption a, figcaption {
 	#movieDetail .details {
 		float: left;
 		margin: 20px 0 0 0px;
+		font-family: Ubuntu,sans-serif;
 	}
 	#movieDetail .actions {
 		float: left;
@@ -874,6 +880,7 @@ figcaption a, figcaption {
 	}
     .navbar {
         min-width: 1000px;
+        min-height: 60px;
     }
     .navbar a {
         color: #FFF !important;
@@ -995,6 +1002,7 @@ figcaption a, figcaption {
 	#cssmenu #menu-button {
 	  margin: 0;
 	  padding: 0;
+	  padding-left:9px;
 	  border: 0;
 	  list-style: none;
 	  line-height: 1;
@@ -1235,7 +1243,7 @@ figcaption a, figcaption {
 	}
 	#home div.secondary {
 		margin: 30px 0 15px 0 !important;
-		padding: 0px 15px 0 20px;
+		padding: 20px 65px 0 70px;
 		background-color: #fff;
 	}
 	#home .news .bordered-heading {
@@ -1438,21 +1446,23 @@ figcaption a, figcaption {
 		margin-top: -130px;
 	}*/
 	#home figure img {
-		min-width:166px;
+		min-width:150px;
 		height:223px;
+		padding:1px;
 		margin-left: auto;
 		margin-right: auto;
 	} 
 	#home figcaption {
-		width:166px;
+		width:150px;
 		height:40px;
 		font-size: .9em;
+		font-family: sans-serif;
 	}
 	#home .insideTablinks ul li a, .insideTablinks ul li span {
 	  margin-top: -170px;
 	}
 	#home #tabs {
-		margin: 95px 30px 0px 30px;
+		margin: 120px 80px 0px 80px;
 	}
 	#home .carousel .left i {
 		margin-top: 90px;
@@ -1471,6 +1481,9 @@ figcaption a, figcaption {
 		width:120px;
 		height:50px;
 		font-size: .7em;
+		font-family: ubuntu;
+		text-align: left;
+		padding-left: 5px;
 	}
 	#movieDetail .border-radius-player {
 		width: 1000px;
@@ -1524,11 +1537,16 @@ figcaption a, figcaption {
 }
 
 /**********************************************************/
-/* This part is specific for each page in the application */ 
+/* This part is specific for each page in the application */
+
+.flex-video object#swfAP {
+	width: 1px;
+	height: 1px;
+}
 
 #home div.jumbotron-text .realtitle {
 	font-family: 'Ubuntu',sans-serif !important;
-	font-size: 35px;
+	font-size: 34px;
 	margin-top:20px;
 	font-weight:bold;
 	color:rgb(238, 238, 238) !important;
@@ -1540,14 +1558,14 @@ figcaption a, figcaption {
 #home div.jumbotron-text {
 	color: #ffffff !important;
 	position: relative;
-	left: 20px;
-	top: 40px;
+	left: 50px;
+	top: 60px;
 }
 
 #home p.details {
-	font-style: italic;
 	font-weight:bold;
 	font-size: 1.0em;
+	font-family: Helvetica;
 	text-shadow: #000 0px 0px 1px;
 	color:rgb(238, 238, 238) !important;
 }
@@ -1600,7 +1618,7 @@ figcaption a, figcaption {
 }
 
 #home .main-slider {	
-	margin-top: -200px;
+	margin-top: -185px;
 	clear: both;
 	overflow: hidden;
 }
@@ -1756,8 +1774,7 @@ figcaption a, figcaption {
 }
 
 #home .media-heading {
-	font-weight: 700;
-	font-size: 1.0em !important;
+	font-size: 1.2em !important;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
@@ -1787,11 +1804,12 @@ figcaption a, figcaption {
 }
 
 #home ul.nav-tabs a {
-	color: #555 !important;
+	color: #686868 !important;
+	font-family: Source Sans Pro;
 }
 
 #home .home-news-time {
-	font-size: 0.7em;
+	font-size: 0.9em;
 	color: #666 !important;
 }
 
@@ -1834,13 +1852,14 @@ figcaption a, figcaption {
     background-color: rgba(24, 24, 24, 0.7);
 }
 
-#movieDetail .detailed-information {
+#movieDetail .desktop-only .detailed-information {
 	float: left;
 	margin: 30px 0 0 0;
 	padding-left: 40px;
 	min-width: 629px;
 	width: 73%;	
 	height: 420px;
+	text-shadow: #000 1px 1px 1px;
 }
 
 #movieDetail .title-info span {
@@ -1848,18 +1867,20 @@ figcaption a, figcaption {
 	padding-left: 8px;
 }
 
-#movieDetail .title-info {
+#movieDetail .desktop-only .title-info {
 	margin-left: -10px;
+	text-shadow: #000 1px 1px 1px;
 }
 
 #movieDetail .ratings {
-	font-size: 0.8em;
+	font-size: 0.9em;
 	text-align: center;
 	margin-top: 10px;
+	text-shadow: #000 1px 1px 1px;
 }
 
 #movieDetail .additional-information a {
-	color: #4394DB !important;
+	color: #5BACF3 !important;
 }
 
 #movieDetail figure.title-actors img {
@@ -1880,11 +1901,13 @@ figcaption a, figcaption {
 	font-size: 0.9em;
 	margin-top: 5px;	
 	margin-left: 4px;
+	font-family: Ubuntu,sans-serif;
 }
 
 #movieDetail .review-body {
 	color: #333 !important;
 	font-size: 0.9em;
+	font-family: Ubuntu,sans-serif;
 }
 
 #movieDetail .review-info strong {
@@ -1904,6 +1927,7 @@ figcaption a, figcaption {
 	border-radius:50%;
 	width: 28px !important;
 	height: 28px !important;
+	font-family: Ubuntu,sans-serif;
 }
 
 #movieDetail .review-full a {
@@ -1985,7 +2009,7 @@ figcaption a, figcaption {
 }
 
 #movieDetail .title-info a {
-	color: #4394DB !important;
+	color: #5BACF3 !important;
 }
 
 #movieDetail button.trailer-trigger, #movieDetail button.movie-trigger {
@@ -2246,7 +2270,8 @@ figcaption a, figcaption {
 .browse .main-content .fa,
 .browse .main-content form,
 .browse .main-content button {
-	color: #333 !important;	
+	color: #333 !important;
+	font-family: Helvetica Neue;	
 }
 
 .browse #filters .form-control {
@@ -2320,6 +2345,7 @@ figcaption a, figcaption {
 	font-size: 1.1em;
 	font-weight: bold;
 	color: #333;
+	font-family: Helvetica Neue;
 }
 
 .browse #list .movie-description span.rating {
@@ -2394,6 +2420,7 @@ figcaption a, figcaption {
 
 .browse #list .directorsAndCast a {
 	color: #4394DB !important;
+	font-family: Helvetica Neue;
 }
 
 .browse #list button {
@@ -2488,7 +2515,8 @@ figcaption a, figcaption {
 }
 
 .show .actor-filmo, .show .actor-known-for {
-	margin-top:10px;
+	margin-top:50px;
+	margin-bottom:70px;
 }
 
 .show .actor-known-for figure:first-child {
@@ -2670,4 +2698,9 @@ figcaption a, figcaption {
 
 #home .mobile-only div .bordered-heading {
 	margin-bottom: 10px;
+}
+
+#brand-logo {
+	height:40px;
+	width:85px;
 }
